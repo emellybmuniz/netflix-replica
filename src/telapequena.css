@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+html, body {
+    font-family: arial;
+    height: 100vh;
+    width: 100vw;
+}
+
+#cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 0px 0px 10px;
+    background-color: black;
+    color: white;
+}
+
+
+#cabecalho, h1 a {
+    color: red;
+}
+
+#cabecalho .botao {
+    background-color: red;
+    border-radius: 4px;
+    border: 0px;
+    color: white;
+    padding: 8px;
+}
+
+main {
+    height: 100vh;
+    background-color: rgb(105, 102, 97);
+    background-image: url(imagens/website_small.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#primeira-parte {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.578);
+    width: 80%;
+    height: 50%;
+}
+
+#primeira-parte > header > h2 {
+    padding: 10px;
+    color: white;
+    font-size: 1.6em;
+}
+
+#primeira-parte > header > p {
+    color: white;
+    padding: 9px;
+}
+
+#primeira-parte > form {
+    display: block;
+    background-color: red;
+    width: fit-content;
+}
+
+.container-input, #botao {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.container-input > label > input {
+    padding: 10px
+}
+
+.container-input > #botao {
+    padding: 10px;
+}
