@@ -66,13 +66,6 @@ main {
     right: 0;
 }
 
-/* Limitando títulos e parágrafos */
-
-.container header h2, .container header p {
-    margin: 30px 40px;
-}
-
-
 #primeira-parte header h2 {
     font-size: 1.5rem;
 }
@@ -125,28 +118,27 @@ main {
     background: #000;
     color: #fff;
     margin-bottom: 10px;
-    padding: 20px;
+    padding-top: 20px;
     text-align: center;
 }
 
-#segunda-parte header, #terceira-parte header, #quarta-parte header, #quinta-parte header  {
-    height: 150px;
+/* Limitando títulos e parágrafos */
+.container header h2, .container header p {
+    margin: 20px 14px;
 }
-
-#segunda-parte h3, #terceira-parte h3, #quarta-parte h3, #quinta-parte h3  {
+.container h3 {
     font-size: 1.5rem;
     margin-top: 50px;
-    padding-bottom: 20px;
 }
 
-#segunda-parte p, #terceira-parte p, #quarta-parte p, #quinta-parte p {
+.container p {
     font-size: 0.9rem;
     margin: 0 25px;
 }
 
 #imagem-tv, #dispositivos, #infantil, #baixar-filmes-series {
     width: 80%;
-    margin: 30px 50px;
+    margin: 20px 50px;
 }
 
 #widget {
@@ -154,6 +146,7 @@ main {
     flex-direction: row;
     width: 200px;
     height: 70px;
+    margin-bottom: 20px;
     border: 2px solid gray;
     border-radius: 8px;
     background-color: rgb(0, 0, 0);
@@ -178,28 +171,55 @@ main {
 #gif {
     width: 5rem;
     margin-right: 10px;
-
     background: url('https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif') center center no-repeat;
     background-size: 100%;
 }
 
+#sexta-parte {
+    padding-bottom: 20px;
+    list-style: none;
+}
+
+#sexta-parte h3 {
+    font-size: 1.8em;  
+    margin-top: 10px;
+}
+
+#sexta-parte ul h5 {
+    margin: 20px;
+    margin-bottom: 1px;
+    background-color: #3c3c3c;
+    font-size: 1rem;
+    padding: 20px;
+    text-align: left;
+}
+
+#sexta-parte ul p {
+    background-color: #3c3c3c;
+    padding: 15px;
+    margin: 0px 20px;
+}
 
 #footer-main {
-    display: flex;
-    flex-wrap: wrap;
+    position: relative;
     background-color: #000;
     color: #b7b7b7;
     padding: 20px;
+    width: 100%;
+}
+
+#footer-main ul {
+    column-count: 2; /* Número de colunas */
+    column-gap: 20px; /* Espaço entre as colunas */
+    padding: 20px 0px;
 }
 
 #footer-main ul li {
     text-decoration: underline;
     list-style-type: none;
     cursor: pointer;
-}
-
-#footer-main ul p {
-    padding: 10px 0px;
+    padding-top: 15px;
+    font-size: 0.9em;
 }
 
 #footer-main ul p a {
