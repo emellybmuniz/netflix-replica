@@ -1,83 +1,132 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix réplica</title>
-    <link rel="stylesheet" href="src/telapequena.css" />
+    <link rel="stylesheet" href="src/telapequena.css">
+    <link rel="stylesheet" href="src/telamedia.css">
   </head>
   <body>
     <header id="cabecalho">
       <h1><a href="#" class="logo">Netflix</a></h1>
-      <button type="submit" class="botao">Entrar</button>
+      <button type="submit" class="botao" id="botao-entrar">Entrar</button>
     </header>
 
     <main>
-      <section id="primeira-parte">
+      <section id="primeira-parte" class="container">
+          <div id="fundoTransparente">
+            <header>
+              <h2>Filmes, séries e muito mais, sem limites</h2>
+              <p>Assista onde quiser. Cancele quando quiser.</p>
+              <p>
+                Quer assistir? Informe seu email para criar ou reinciar sua
+                assinatura
+              </p>
+            </header>
+        
+            <form action="#">
+              <div class="container-input email">
+                <label for="iemail">
+                  <input
+                  type="email"
+                  name="email"
+                  id="iemail"
+                  minlength="20"
+                  maxlength="50"
+                  autocomplete="on"
+                  placeholder="Email ou número de celular"
+                  size="30"
+                  required
+                  />
+                  <button type="submit" class="botao" id="botao-vamosLa">
+                    Vamos lá >
+                  </button>
+                </label>
+            </div>
+          </form>
+        </div>
+        </section>
+        <section id="segunda-parte" class="container">
+          <header>
+            <h3>Aproveite na TV</h3>
+            <p>Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple Tv, aparelhos de Blue-ray e outros dispostivos</p>
+          </header>
+          <img src="src/imagens/tv.png" alt="tv" id="imagem-tv">
+          </section>
+
+      <section id="terceira-parte" class="container">
         <header>
-          <h2>Filmes, séries e muito mais, sem limites</h2>
-          <p>Assita onde quiser. Cancele quando quiser.</p>
-          <p>
-            Quer assistir? Informe seu email para criar ou reinciar sua
-            assinatura
-          </p>
+          <h3>Assista onde quiser</h3>
+          <p>Assista a quantos filmes e séries quiser no celular, tablet, laptop e TV</p>
         </header>
-
-        <form action="#">
-          <div class="container-input email">
-            <label for="iemail">
-              <input
-                type="email"
-                name="email"
-                id="iemail"
-                minlength="20"
-                maxlength="50"
-                autocomplete="on"
-                placeholder="Email ou número de celular"
-                required
-              />
-              <button type="submit" class="botao">Vamos lá ></button>
-            </label>
-          </div>
-        </form>
+        <img src="src/imagens/dispositivos.png" alt="diversos dispositivos" id="dispositivos">
       </section>
 
-      <section>
-        <h3></h3>
+      <section id="quarta-parte" class="container">
+        <header>
+          <h3>Crie perfis para Crianças</h3>
+          <p>Deixe as crainças se aventurarem com seus personagens favoritos em um espaço feiro só para eles, sem pagar a mais por isso</p>
+        </header>
+          <img src="src/imagens/infantil.png" alt="" id="infantil">
       </section>
 
-      <section>
-        <h3></h3>
+      <section id="quinta-parte" class="container">
+        <header>
+          <h3>Baixe séries para assistir offline</h3>
+          <p>Assista em um avião, trem ou submarino...</p>
+        </header>
+        <img src="src/imagens/baixar-filmes-series.jpg" alt="" id="baixar-filmes-series">
+        <div id="widget">
+          <img src="src/imagens/mini-cartaz.png" alt="" id="mini-cartaz">
+          <p>Stranger Things Download em andamento...</p>
+          <div id="gif"></div>
+        </div>
       </section>
 
-      <section>
-        <h3></h3>
+      <section id="sexta-parte" class="container">
+        <header>
+          <h3>Perguntas frequentes</h3>
+        </header>
+        <ul>
+          <li>
+            <h5>O que é a Netflix?</h5>
+            <p>A Netflix é um serviço de streaming que oferece uma ampla varieadade de séries, filmes e documentários</p>
+          </li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
       </section>
 
-      <section>
-        <h3></h3>
-      </section>
-
-      <section>
-        <h3></h3>
-      </section>
-
-      <section>
+      <section id="setima-parte" class="container">
         <h3></h3>
       </section>
     </main>
 
-    <footer>
+    <footer id="footer-main">
       <ul>
-        <p>Dúvidas? Lique 0800 591 2876</p>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <p>netflix Brasil</p>
+        <p>Dúvidas? Lique <a href="#">0800 591 2876</a></p>
+        <li>perguntas frequentes</li>
+        <li>Conta</li>
+        <li>Relações com investidores</li>
+        <li>Resgatar cartão pré-pago</li>
+        <li>Formas de assistir</li>
+        <li>Privacidade</li>
+        <li>Informações corporativas</li>
+        <li>Teste de velocidade</li>
+        <li>Só na Netflix</li>
+        <li>Central de Ajuda</li>
+        <li>Media Center</li>
+        <li>Carreiras</li>
+        <li>Comprar cartão pré-pago</li>
+        <li>Termos de uso</li>
+        <li>Preferências de cookies</li>
+        <li>Entre em contato</li>
+        <li>Avisos Legais</li>
+        <p>Netflix Brasil</p>
       </ul>
     </footer>
   </body>
