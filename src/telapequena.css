@@ -2,231 +2,238 @@
 
 /* Reset básico */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
-html, body {
-    font-family: Arial, sans-serif;
-    height: 100vh;
-    background-color: #2A2927;
-    color: white;
+html,
+body {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  background-color: #2a2927;
+  color: white;
+  overflow-x: hidden;
 }
 
 #cabecalho {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #000;
 }
 
-#cabecalho, #cabecalho h1 a {
-    color: red;
+#cabecalho,
+#cabecalho h2 a {
+  color: red;
 }
 
 #cabecalho #botao-entrar {
-    background-color: red;
-    border-radius: 4px;
-    border: none;
-    color: white;
-    padding: 8px;
-    margin-right: 10px;
+  cursor: pointer;
+  background-color: red;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  padding: 8px;
+  margin-right: 10px;
 }
 
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 #primeira-parte {
-    background: url('imagens/website_small.jpg') no-repeat center center fixed;
-    background-size: cover;
-    text-align: center;
-    width: 100%;
-    height: 430px;
-    margin-bottom: 10px;
-    position: relative;
+  background: url("imagens/website_small.jpg") no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
+  width: 100%;
+  height: 430px;
+  margin-bottom: 10px;
+  position: relative;
 }
 
 #fundoTransparente {
-    background-color: rgba(0, 0, 0, 0.64);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+  background-color: rgba(0, 0, 0, 0.64);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 #primeira-parte header h2 {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 #primeira-parte header p {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 #primeira-parte form {
-    width: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#primeira-parte input#iemail {
-    padding: 10px;
-    outline: none;
-    margin-top: 10px;
-    border: 0.5px solid gray;
-    border-radius: 3px;
-    background-color: #000;
-    color: white;
+.container-input {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
 }
 
-.container-input.email {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    margin: 10px auto;
+div.container-input input#iemail {
+  padding: 15px;
+  margin-bottom: 5px;
+  outline: none;
+  margin-top: 10px;
+  border: 0.5px solid gray;
+  border-radius: 3px;
+  background-color: #000;
+  color: white;
 }
 
-#botao-vamosLa {
-    cursor: pointer;
-    background-color: red;
-    margin-top: 10px;
-    box-shadow: 1px 0px 1px 4px rgba(0, 0, 0, 0.09); 
-    padding: 10px;
-    border: none;
-    border-radius: 3px;
-    color: white;
+div.container-input button#botao-vamosLa {
+  cursor: pointer;
+  background-color: red;
+  margin-top: 10px;
+  box-shadow: 1px 0px 1px 4px rgba(0, 0, 0, 0.09);
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  color: white;
 }
 
 .container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #000;
-    color: #fff;
-    margin-bottom: 10px;
-    padding-top: 20px;
-    text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #000;
+  color: #fff;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  text-align: center;
 }
 
 /* Limitando títulos e parágrafos */
-.container header h2, .container header p {
-    margin: 20px 14px;
+.container header h2,
+.container header p,
+.container header h1 {
+  margin: 15px 15px;
 }
 .container h3 {
-    font-size: 1.5rem;
-    margin-top: 50px;
+  font-size: 1.5rem;
+  margin-top: 50px;
 }
 
 .container p {
-    font-size: 0.9rem;
-    margin: 0 25px;
+  font-size: 0.9rem;
+  margin: 0px 25px;
 }
 
-#imagem-tv, #dispositivos, #infantil, #baixar-filmes-series {
-    width: 80%;
-    margin: 20px 50px;
+#imagem-tv,
+#dispositivos,
+#infantil,
+#baixar-filmes-series {
+  width: 90%;
+  margin: 20px 50px;
 }
 
 #widget {
-    display: flex;
-    flex-direction: row;
-    width: 200px;
-    height: 70px;
-    margin-bottom: 20px;
-    border: 2px solid gray;
-    border-radius: 8px;
-    background-color: rgb(0, 0, 0);
-    position: relative;
-
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+  height: 70px;
+  margin-bottom: 20px;
+  border: 2px solid gray;
+  border-radius: 8px;
+  background-color: rgb(0, 0, 0);
+  position: relative;
 }
 
-#widget p, #widget h3 {
-    padding: 5px 0px;
-    margin: 10px 0px 10px 10px;
-    display: inline;
-    font-size: 0.8em;
-    content: contain;
-    text-align: left;
+#widget p,
+#widget h3 {
+  padding: 5px 0px;
+  margin: 10px 0px 10px 10px;
+  display: inline;
+  font-size: 0.7em;
+  text-align: left;
 }
 
 #mini-cartaz {
-    width: 20%;
-    border-radius: 10px 0px 0px 10px;
+  width: 20%;
+  border-radius: 10px 0px 0px 10px;
 }
 
 #gif {
-    width: 5rem;
-    margin-right: 10px;
-    background: url('https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif') center center no-repeat;
-    background-size: 100%;
+  width: 5rem;
+  margin-right: 10px;
+  background: url("https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif")
+    center center no-repeat;
+  background-size: 100%;
 }
 
 #sexta-parte {
-    padding-bottom: 20px;
-    list-style: none;
+  padding-bottom: 30px;
 }
 
 #sexta-parte h3 {
-    font-size: 1.8em;  
-    margin-top: 10px;
+  font-size: 1.8em;
+  margin-top: 10px;
+}
+
+#sexta-parte ul li {
+  display: flex;
+  flex-direction: column;
 }
 
 #sexta-parte ul h5 {
-    margin: 20px;
-    margin-bottom: 1px;
-    background-color: #3c3c3c;
-    font-size: 1rem;
-    padding: 20px;
-    text-align: left;
+  margin: 30px;
+  margin-bottom: 1px;
+  background-color: #3c3c3c;
+  font-size: 1rem;
+  padding: 20px;
+  text-align: left;
 }
 
 #sexta-parte ul p {
-    background-color: #3c3c3c;
-    padding: 15px;
-    margin: 0px 20px;
+  background-color: #3c3c3c;
+  padding: 15px;
+  margin: 0px 30px;
 }
 
 #footer-main {
-    position: relative;
-    background-color: #000;
-    color: #b7b7b7;
-    padding: 20px;
-    width: 100%;
+  position: relative;
+  background-color: #000;
+  color: #b7b7b7;
+  padding: 20px;
+  width: 100%;
 }
 
 #footer-main ul {
-    column-count: 2; /* Número de colunas */
-    column-gap: 20px; /* Espaço entre as colunas */
-    padding: 20px 0px;
+  column-count: 2;
+  column-gap: 20px;
+  padding: 20px 0px;
 }
 
 #footer-main ul li {
-    text-decoration: underline;
-    list-style-type: none;
-    cursor: pointer;
-    padding-top: 15px;
-    font-size: 0.9em;
+  text-decoration: underline;
+  list-style-type: none;
+  cursor: pointer;
+  padding-top: 15px;
+  font-size: 0.9em;
 }
 
 #footer-main ul p a {
-    text-decoration: underline;
-    color: #b7b7b7;
-}
-
-@media (max-width: 768px) {
-    
+  text-decoration: underline;
+  color: #b7b7b7;
 }

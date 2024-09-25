@@ -1,7 +1,22 @@
 @charset "UTF-8";
 
-@media (min-width:740px) {
-    body {
-        color: red;
+@media (min-width: 740px) {
+
+    #primeira-parte h1 {
+        font-size: 1.9em;
     }
+
+    #primeira-parte p {
+        font-size: 5em;
+    }
+
+    #primeira-parte input#iemail { 
+        width: 300px;
+}
+
+    #sexta-parte {
+        padding: 72px;
+    }
+
+
 }

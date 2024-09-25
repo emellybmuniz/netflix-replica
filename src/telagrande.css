@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 990px) {
+
+    .no-reverse {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .reverse {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .no-reverse header {
+        margin-right: 90px;
+ 
+    }
+
+    .reverse header {
+        margin-left: 90px;
+    }
+
+    #imagem-tv, #dispositivos, #infantil, #baixar-filmes-series {
+        width: 40%;
+    }
+
+    #widget {
+       display: none; 
+    }
+    
+    
+}

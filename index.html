@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix réplica</title>
     <link rel="stylesheet" href="src/telapequena.css">
-    <link rel="stylesheet" href="src/telamedia.css">
+    <link rel="stylesheet" href="src/telamedia.css" media="all">
+    <link rel="stylesheet" href="src/telagrande.css" media="all">
     <link rel="stylesheet" href="https://fontawesome.com/icons/plus?f=sharp&s=solid&an=spin-pulse">
   </head>
   <body>
     <header id="cabecalho">
-      <h1><a href="#" class="logo">Netflix</a></h1>
+      <h2><a href="#" class="logo">Netflix réplica</a></h2>
       <button type="submit" class="botao" id="botao-entrar">Entrar</button>
     </header>
 
     <main>
-      <section id="primeira-parte" class="container">
+      <section id="primeira-parte" class="container no-reverse">
           <div id="fundoTransparente">
             <header>
-              <h2>Filmes, séries e muito mais, sem limites</h2>
+              <h1>Filmes, séries e muito mais, sem limites</h1>
               <p>Assista onde quiser. Cancele quando quiser.</p>
               <p>
                 Quer assistir? Informe seu email para criar ou reinciar sua
@@ -27,7 +28,7 @@
             </header>
         
             <form action="#">
-              <div class="container-input email">
+              <div class="container-input">
                 <label for="iemail">
                   <input
                   type="email"
@@ -48,7 +49,7 @@
           </form>
         </div>
         </section>
-        <section id="segunda-parte" class="container">
+        <section id="segunda-parte" class="container reverse">
           <header>
             <h3>Aproveite na TV</h3>
             <p>Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple Tv, aparelhos de Blue-ray e outros dispostivos</p>
@@ -56,7 +57,7 @@
           <img src="src/imagens/tv.png" alt="tv" id="imagem-tv">
           </section>
 
-      <section id="terceira-parte" class="container">
+      <section id="terceira-parte" class="container no-reverse">
         <header>
           <h3>Assista onde quiser</h3>
           <p>Assista a quantos filmes e séries quiser no celular, tablet, laptop e TV</p>
@@ -64,7 +65,7 @@
         <img src="src/imagens/dispositivos.png" alt="diversos dispositivos" id="dispositivos">
       </section>
 
-      <section id="quarta-parte" class="container">
+      <section id="quarta-parte" class="container reverse">
         <header>
           <h3>Crie perfis para Crianças</h3>
           <p>Deixe as crainças se aventurarem com seus personagens favoritos em um espaço feiro só para eles, sem pagar a mais por isso</p>
@@ -72,7 +73,7 @@
           <img src="src/imagens/infantil.png" alt="" id="infantil">
       </section>
 
-      <section id="quinta-parte" class="container">
+      <section id="quinta-parte" class="container no-reverse">
         <header>
           <h3>Baixe séries para assistir offline</h3>
           <p>Assista em um avião, trem ou submarino...</p>
@@ -94,7 +95,6 @@
             <h5>O que é a Netflix?</h5>
             <p>A Netflix é um serviço de streaming que oferece uma ampla varieadade de séries, filmes e documentários premiados em milhares de aparelhos conectados à internet.</p>
             <p>Você pode assistir a quantos filmes e séries quiser, quando e onde quiser - tudo por um preço mensal acessível. Aqui você sempre encontra novidades. A casa semana, adicionamos novas séries e filmes</p>
-            <i class="fa-sharp fa-solid fa-plus"></i>
           </li>
           <li>
             <h5>Quanto custa a Netflix?</h5>
