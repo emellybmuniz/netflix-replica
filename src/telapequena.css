@@ -1,19 +1,36 @@
 @charset "UTF-8";
 
-/* Reset básico */
+/* --- root --- */
+:root {
+  --primary-red: #e50914; 
+  --text-light: #ffffff;
+  --text-gray: #b7b7b7;
+  --bg-black: #000000;
+  --bg-dark-gray: #2a2927;
+  --bg-medium-gray: #3c3c3c;
+  --border-gray: #808080;
+  --bg-overlay: rgba(0, 0, 0, 0.64);
+
+  --default-font: Arial, sans-serif;
+  --border-radius-sm: 4px;
+  --space-sm: 10px;
+  --space-md: 15px;
+  --space-lg: 20px;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: var(--default-font);
 }
 
 html,
 body {
-  font-family: Arial, sans-serif;
   height: 100vh;
-  background-color: #2a2927;
-  color: white;
+  background-color: var(--bg-dark-gray);
+  color: var(--text-light);
   overflow-x: hidden;
 }
 
@@ -21,23 +38,23 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
-  background-color: #000;
+  padding: var(--space-md);
+  background-color: var(--bg-black);
 }
 
 #cabecalho,
 #cabecalho h2 a {
-  color: red;
+  color: var(--primary-red);
 }
 
 #cabecalho #botao-entrar {
   cursor: pointer;
-  background-color: red;
-  border-radius: 4px;
+  background-color: var(--primary-red);
+  border-radius: var(--border-radius-sm);
   border: none;
-  color: white;
-  padding: 8px;
-  margin-right: 10px;
+  color: var(--text-light);
+  padding: var(--space-sm);
+  margin-right: var(--space-sm);
 }
 
 main {
@@ -52,13 +69,13 @@ main {
   background-size: cover;
   text-align: center;
   width: 100%;
-  height: 430px;
-  margin-bottom: 10px;
+  height: 550px;
+  margin-bottom: var(--space-sm);
   position: relative;
 }
 
 #fundoTransparente {
-  background-color: rgba(0, 0, 0, 0.64);
+  background-color: var(--bg-overlay);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -87,29 +104,29 @@ main {
 .container-input {
   display: flex;
   flex-wrap: wrap;
-  padding: 15px;
+  justify-content: center;
+  padding: var(--space-md);
 }
 
-div.container-input input#iemail {
-  padding: 15px;
+.container-input #iemail {
+  padding: var(--space-md);
   margin-bottom: 5px;
   outline: none;
-  margin-top: 10px;
-  border: 0.5px solid gray;
-  border-radius: 3px;
-  background-color: #000;
-  color: white;
+  margin-top: var(--space-sm);
+  border: 1px solid var(--border-gray); 
+  border-radius: var(--border-radius-sm);
+  background-color: var(--bg-black);
+  color: var(--text-light);
 }
 
-div.container-input button#botao-vamosLa {
+.container-input #botao-vamosLa {
   cursor: pointer;
-  background-color: red;
-  margin-top: 10px;
+  background-color: var(--primary-red);
   box-shadow: 1px 0px 1px 4px rgba(0, 0, 0, 0.09);
-  padding: 10px;
+  padding: var(--space-md) var(--space-sm);
   border: none;
-  border-radius: 3px;
-  color: white;
+  border-radius: var(--border-radius-sm);
+  color: var(--text-light);
 }
 
 .container {
@@ -117,18 +134,16 @@ div.container-input button#botao-vamosLa {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #000;
-  color: #fff;
-  margin-bottom: 10px;
-  padding-top: 20px;
+  background-color: var(--bg-black);
+  margin-bottom: var(--space-sm);
+  padding-top: var(--space-lg);
   text-align: center;
 }
 
-/* Limitando títulos e parágrafos */
 .container header h2,
 .container header p,
 .container header h1 {
-  margin: 15px 15px;
+  margin: var(--space-md);
 }
 .container h3 {
   font-size: 1.5rem;
@@ -137,7 +152,7 @@ div.container-input button#botao-vamosLa {
 
 .container p {
   font-size: 0.9rem;
-  margin: 0px 25px;
+  margin: 0 25px;
 }
 
 #imagem-tv,
@@ -145,7 +160,7 @@ div.container-input button#botao-vamosLa {
 #infantil,
 #baixar-filmes-series {
   width: 90%;
-  margin: 20px 50px;
+  margin: var(--space-lg) auto;
 }
 
 #widget {
@@ -154,9 +169,9 @@ div.container-input button#botao-vamosLa {
   width: 200px;
   height: 70px;
   margin-bottom: 20px;
-  border: 2px solid gray;
+  border: 2px solid var(--border-gray);
   border-radius: 8px;
-  background-color: rgb(0, 0, 0);
+  background-color: var(--bg-black);
   position: relative;
 }
 
@@ -189,45 +204,45 @@ div.container-input button#botao-vamosLa {
 #sexta-parte h3 {
   font-size: 1.8em;
   margin-top: 10px;
+  margin-bottom: var(--space-lg);
 }
 
-#sexta-parte ul li {
-  display: flex;
-  flex-direction: column;
+#sexta-parte ul {
+  list-style-type: none;
 }
 
 #sexta-parte ul h5 {
-  margin: 30px;
-  margin-bottom: 1px;
-  background-color: #3c3c3c;
+  margin: 0 30px 1px; 
+  background-color: var(--bg-medium-gray);
   font-size: 1rem;
   padding: 20px;
   text-align: left;
+  cursor: pointer;
 }
 
 #sexta-parte ul p {
-  background-color: #3c3c3c;
-  padding: 15px;
-  margin: 0px 30px;
+  background-color: var(--bg-medium-gray);
+  padding: var(--space-md);
+  margin: 0 30px 30px; 
 }
 
 #footer-main {
   position: relative;
-  background-color: #000;
-  color: #b7b7b7;
-  padding: 20px;
+  background-color: var(--bg-black);
+  color: var(--text-gray);
+  padding: var(--space-lg);
   width: 100%;
 }
 
 #footer-main ul {
   column-count: 2;
-  column-gap: 20px;
-  padding: 20px 0px;
+  column-gap: var(--space-lg);
+  padding: var(--space-lg) 0;
+  list-style-type: none;
 }
 
 #footer-main ul li {
   text-decoration: underline;
-  list-style-type: none;
   cursor: pointer;
   padding-top: 15px;
   font-size: 0.9em;
@@ -235,5 +250,5 @@ div.container-input button#botao-vamosLa {
 
 #footer-main ul p a {
   text-decoration: underline;
-  color: #b7b7b7;
+  color: var(--text-gray);
 }
