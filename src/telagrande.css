@@ -2,6 +2,10 @@
 
 @media screen and (min-width: 990px) {
 
+    #primeira-parte header {
+        margin-right: 0px;
+      }
+
     .no-reverse {
         display: flex;
         flex-direction: row;
